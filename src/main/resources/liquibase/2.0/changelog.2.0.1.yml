@@ -1,0 +1,16 @@
+databaseChangeLog:
+  - changeSet:
+        id: Added foreign key constraint to person_id column
+        author: Ilgar Shikhiyev
+        changes:
+          - addForeignKeyConstraint:
+              baseColumnNames: person_id
+              baseTableName: contact_info
+              constraintName: fk_contact_info_person
+              deferrable: true
+              initiallyDeferred: true
+              onDelete: CASCADE
+              onUpdate: RESTRICT
+              referencedColumnNames: id
+              referencedTableName: person
+              validate: true

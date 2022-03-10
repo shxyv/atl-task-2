@@ -1,0 +1,17 @@
+databaseChangeLog:
+- changeSet:
+      id: Created Contact_info table
+      author: Ilgar Shikhiyev
+      changes:
+        - createTable:
+            columns:
+              - column:
+                  name: person_id
+                  type: bigint
+              - column:
+                  name: address
+                  type: varchar(255)
+              - column:
+                  name: phone_number
+                  type: varchar(255)
+            tableName: contact_info

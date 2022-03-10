@@ -1,0 +1,18 @@
+databaseChangeLog:
+ - changeSet:
+     id: Insertion some data
+     author: Ilgar Shikhiyev
+     changes:
+       - insert:
+           columns:
+             - column:
+                 name: firstname
+                 value: Ilgar
+             - column:
+                 name: lastname
+                 value: Shikhiyev
+             - column:
+                 name: age
+                 value: 19
+           dbms: 'postgresql'
+           tableName: person

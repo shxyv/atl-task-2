@@ -1,0 +1,12 @@
+databaseChangeLog:
+ - changeSet:
+       id: Update some data
+       author: Ilgar Shikhiyev
+       changes:
+         - update:
+             columns:
+               - column:
+                   name: firstname
+                   value: Habib
+             tableName: person
+             where: id=1
